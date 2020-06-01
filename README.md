@@ -1,6 +1,6 @@
 # Hosh
 
-Hosh is an experimental shell, featuring:
+<a href="https://github.com/hosh-shell/hosh">Hosh</a> is an experimental shell, featuring:
 
 - **portability**¹
     - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
@@ -29,6 +29,7 @@ Hosh is an experimental shell, featuring:
     - fitness functions from *Evolutionary Architecture* ISBN-13: 978-1491986363)
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
+
 ² much more design and work is needed in this area
 
 ## Examples
