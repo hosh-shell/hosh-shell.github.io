@@ -114,11 +114,13 @@ To recursively remove all `.class` files in `target`:
 - [collection pipeline](https://www.martinfowler.com/articles/collection-pipeline/)
 - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/)
+- [KScript (kotlin library)](https://github.com/holgerbrandl/kscript)
+- [Script (go library)](https://github.com/bitfield/script)
+
+And some nice UI features from:
 - [Zsh](https://zsh.org)
-- [Elvish](https://elv.sh)
-- [Fish](https://fishshell.com)
-- [rust](https://github.com/nushell/nushell)
-- [scala](https://ammonite.io)
-- [kotlin](https://github.com/holgerbrandl/kscript)
-- [go](https://github.com/bitfield/script)
+- [Elvish (go)](https://elv.sh)
+- [Fish (C++)](https://fishshell.com)
+- [Nushell (rust)](https://github.com/nushell/nushell)
+- [Ammonite (scala)](https://ammonite.io)
 
