@@ -72,18 +72,6 @@ eee 1MB
 
 Schema is same of `walk`.
 
-### Parsing
-
-It is possible to create records from text by using `regex` built-in:
-
-```
-hosh> git config -l | regex text '(?<name>.+)=(?<value>.+)' | take 3 | table
-name                          value
-credential.helper             osxkeychain
-user.name                     Davide Angelocola
-user.email                    davide.angelocola@gmail.com
-```
-
 ### HTTP
 
 Stream line by line a TSV file via HTTPS, take first 10 lines, split each line by tab yielding a 1-indexed record and finally show a subset of keys.
@@ -108,6 +96,17 @@ To recursively remove all `.class` files in `target`:
 
 `{ path -> ... }` is lambda syntax, inside this scope is possible to use `${path}`.
 
+### Parsing
+
+It is possible to create records from text by using `regex` built-in:
+
+```
+hosh> git config -l | regex text '(?<name>.+)=(?<value>.+)' | take 3 | table
+name                          value
+credential.helper             osxkeychain
+user.name                     Davide Angelocola
+user.email                    davide.angelocola@gmail.com
+```
 
 ## Inspired by
 
