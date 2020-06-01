@@ -5,10 +5,11 @@
 - **portability**¹
     - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
     - works out-of-the-box in Windows, MacOS, Linux
+    - HTTP 1.1/2.0 client and network interface (ifconfig) as built-in commands
 - **usability as first class citizen**²
     - sorting with [alphanum](http://davekoelle.com/alphanum.html)
     - ANSI colors by default
-    - errors always colored in red
+    - errors (i.e. stderr) always colored in red
     - file sizes reported by default as KB, MB, GB, ...
     - [better history by default](https://sanctum.geek.nz/arabesque/better-bash-history/)
        - record timestamps for each command (see `history` command)
@@ -17,16 +18,16 @@
        - no limits
 - **pipelines** built around schema-less records:
     - built-in commands produce records with well-defined keys
-    - interoperability with external commands is achieved by using single-key records
-    - `lines pom.xml | enumerate | take 10`
+    - interoperability with external commands is achieved by using single-key record
 - **grouping commands**, with before/after behavior
-    - `withTime { lines pom.xml | sink }`
+    - `withTime { lines very-big-file.txt | count }`
     - `withLock file.lock { ... }`
 - **robust scripts by default**
     - as if running bash scripts with `set -euo pipefail` ([unofficial-strict-mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/))
 - **built with modern tooling and concepts**
-    - Java modules (but still not fully modular)
+    - Java modules
     - fitness functions from *Evolutionary Architecture* ISBN-13: 978-1491986363)
+    - designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
@@ -39,7 +40,7 @@
 Sorting is always performed using a well-defined key:
 ```
 hosh> ls
-# unsorted, following local filesystem order
+# unsorted, following local file-system order
 ...
 hosh> ls | schema
 path size
@@ -111,16 +112,15 @@ user.email                    davide.angelocola@gmail.com
 
 ## Inspired by
 
-- [collection pipeline](https://www.martinfowler.com/articles/collection-pipeline/)
+- [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline/)
 - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/)
-- [KScript (kotlin library)](https://github.com/holgerbrandl/kscript)
-- [Script (go library)](https://github.com/bitfield/script)
+- [KScript (Kotlin library)](https://github.com/holgerbrandl/kscript)
+- [Script (Go library)](https://github.com/bitfield/script)
 
 And some nice UI features from:
-- [Zsh](https://zsh.org)
-- [Elvish (go)](https://elv.sh)
+- [Elvish (Go)](https://elv.sh)
 - [Fish (C++)](https://fishshell.com)
-- [Nushell (rust)](https://github.com/nushell/nushell)
-- [Ammonite (scala)](https://ammonite.io)
+- [Nushell (Rust)](https://github.com/nushell/nushell)
+- [Ammonite (Scala)](https://ammonite.io)
 
