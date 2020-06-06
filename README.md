@@ -17,11 +17,13 @@
        - append to history is incremental and shared between all sessions
        - no limits
 - **pipelines** built around schema-less records:
-    - built-in commands produce records with well-defined keys
-    - interoperability with external commands is achieved by using single-key record
+    - built-in commands produce *records with well-defined keys*
+    - use `| schema` to inspect available keys
+    - interoperability with external commands is achieved by using *single-key record* (with key `text`)
 - **grouping commands**, with before/after behavior
-    - `withTime { lines very-big-file.txt | count }`
-    - `withLock file.lock { ... }`
+    - `withTime { lines very-big-file.txt | count }` like `time command` in bash
+    - `withLock file.lock { command }` run `command` as critical section guarded by `file.lock`
+    - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **robust scripts by default**
     - as if running bash scripts with `set -euo pipefail` ([unofficial-strict-mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/))
 - **built with modern tooling and concepts**
@@ -72,7 +74,6 @@ ddd 1MB
 eee 1MB
 ```
 
-Schema is same of `walk`.
 
 ### HTTP
 
@@ -100,9 +101,12 @@ To recursively remove all `.class` files in `target`:
 
 ### Parsing
 
-It is possible to create records from text by using `regex` built-in:
+It is possible to create records by using `regex` built-in with capturing groups:
 
 ```
+git config -l | schema
+text
+...
 hosh> git config -l | regex text '(?<name>.+)=(?<value>.+)' | take 3 | table
 name                          value
 credential.helper             osxkeychain
