@@ -128,3 +128,7 @@ And some nice UI features from:
 - [Nushell (Rust)](https://github.com/nushell/nushell)
 - [Ammonite (Scala)](https://ammonite.io)
 
+## Sponsors
+
+[![JetBrains](https://raw.githubusercontent.com/JetBrains/logos/master/web/jetbrains/jetbrains-variant-2.svg)](https://www.jetbrains.com/?from=hosh)
+
