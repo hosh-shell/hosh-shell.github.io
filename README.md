@@ -1,7 +1,6 @@
 # Hosh
 
-Latest binary releases:
- - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)\]
+## Features
 
 [Hosh](https://github.com/hosh-shell/hosh) is an experimental shell, featuring:
 
@@ -37,6 +36,11 @@ Latest binary releases:
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
 ² much more design and work is needed in this area
+
+## Downloads
+
+Binary releases:
+ - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)\]
 
 ## Examples
 
