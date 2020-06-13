@@ -42,6 +42,17 @@
 Binary releases:
  - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)\]
 
+## Getting started
+
+Requirements: JDK11
+
+```
+$ java -jar hosh-0.1.0.jar
+hosh> echo "hello world!"
+hello world!
+hosh>
+```
+
 ## Examples
 
 ### Sorting
@@ -135,7 +146,12 @@ And some nice UI features from:
 - [Nushell (Rust)](https://github.com/nushell/nushell)
 - [Ammonite (Scala)](https://ammonite.io)
 
+## License
+
+[MIT License](LICENSE.md)
+
 ## Sponsors
 
 [![JetBrains](https://raw.githubusercontent.com/JetBrains/logos/master/web/jetbrains/jetbrains-variant-2.svg)](https://www.jetbrains.com/?from=hosh)
+
 
