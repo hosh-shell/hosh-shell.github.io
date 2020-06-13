@@ -1,9 +1,9 @@
 # Hosh
 
 Latest binary releases:
- - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) [GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)
+ - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)\]
 
-<a href="https://github.com/hosh-shell/hosh">Hosh</a> is an experimental shell, featuring:
+[Hosh](https://github.com/hosh-shell/hosh) is an experimental shell, featuring:
 
 - **portability**¹
     - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
