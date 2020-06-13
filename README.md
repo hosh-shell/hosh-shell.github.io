@@ -1,5 +1,7 @@
 # Hosh
 
+Latest binary release: [hosh-0.1.0.jar](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) [GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)
+
 <a href="https://github.com/hosh-shell/hosh">Hosh</a> is an experimental shell, featuring:
 
 - **portability**¹
