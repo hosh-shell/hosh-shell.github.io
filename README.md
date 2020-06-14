@@ -15,7 +15,7 @@
     - file sizes reported by default as KB, MB, GB, ...
     - [better history by default](https://sanctum.geek.nz/arabesque/better-bash-history/)
        - record timestamps for each command (see `history` command)
-       - `HISTCONTROL=ignoredups`
+       - ignoring duplicated by default (like `HISTCONTROL=ignoredups` in bash)
        - append to history is incremental and shared between all sessions
        - no limits
 - **pipelines** built around schema-less records:
