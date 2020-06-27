@@ -9,6 +9,7 @@
     - works out-of-the-box in Windows, MacOS, Linux
     - HTTP 1.1/2.0 client and network interface (ifconfig) as built-in commands
 - **usability as first class citizen**²
+    - interactive output displayed as table by default
     - sorting with [alphanum](http://davekoelle.com/alphanum.html)
     - ANSI colors by default
     - errors (i.e. stderr) always colored in red
@@ -125,11 +126,10 @@ It is possible to create records by using `regex` built-in with capturing groups
 git config -l | schema
 text
 ...
-hosh> git config -l | regex text '(?<name>.+)=(?<value>.+)' | take 3 | table
-name                          value
-credential.helper             osxkeychain
-user.name                     Davide Angelocola
-user.email                    davide.angelocola@gmail.com
+hosh> git config -l | regex text '(?<key>.+)=(?<value>.+)' | take 2
+key                value
+credential.helper  osxkeychain
+user.name          Davide Angelocola
 ```
 
 ## Inspired by
