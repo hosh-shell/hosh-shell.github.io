@@ -42,7 +42,6 @@
 
 Binary releases:
  - [0.1.1](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar.asc)\]
- - [0.1.0](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.0/hosh-0.1.0.jar.asc)\]
 
 ## Getting started
 
