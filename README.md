@@ -123,13 +123,16 @@ To recursively remove all `.class` files in `target`:
 It is possible to create records by using `regex` built-in with capturing groups:
 
 ```
-git config -l | schema
+hosh> git config -l | schema
 text
 ...
 hosh> git config -l | regex text '(?<key>.+)=(?<value>.+)' | take 2
 key                value
 credential.helper  osxkeychain
 user.name          Davide Angelocola
+hosh> hosh> git config -l | regex text '(?<key>.+)=(?<value>.+)' | take 2 | schema
+key value
+key value
 ```
 
 ## Inspired by
