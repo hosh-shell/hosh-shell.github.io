@@ -30,9 +30,10 @@
 - **robust scripts by default**
     - as if running bash scripts with `set -euo pipefail` ([unofficial-strict-mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/))
 - **built with modern tooling and concepts**
-    - Java modules
-    - fitness functions from *Evolutionary Architecture* ISBN-13: 978-1491986363)
-    - designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
+    - *Java modules*
+    - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
+    - *Actor Model* (a very minimalistic implementation), designed to be compatible with
+      [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
@@ -138,6 +139,7 @@ key value
 
 ## Inspired by
 
+- [Erlang](https://www.rabbitmq.com/resources/armstrong.pdf)
 - [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline/)
 - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/)
