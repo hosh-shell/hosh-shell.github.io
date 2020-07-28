@@ -41,14 +41,15 @@
 ## Downloads
 
 Binary releases:
- - [0.1.1](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar.asc)\]
+ - [v0.1.2 - 2020-07-28](https://github.com/hosh-shell/hosh/releases/download/v0.1.2/hosh-0.1.2.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.2/hosh-0.1.2.jar.asc)\]
+ - [v0.1.1 - 2020-06-27](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar.asc)\]
 
 ## Getting started
 
 Requirements: JDK11
 
 ```
-$ java -jar hosh-0.1.0.jar
+$ java -jar hosh-0.1.2.jar
 hosh> echo "hello world!"
 hello world!
 hosh>
@@ -141,13 +142,13 @@ key value
 - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/)
 - [KScript (Kotlin library)](https://github.com/holgerbrandl/kscript)
+- [Ammonite (Scala)](https://ammonite.io)
 - [Script (Go library)](https://github.com/bitfield/script)
 
 And some nice UI features from:
 - [Elvish (Go)](https://elv.sh)
 - [Fish (C++)](https://fishshell.com)
 - [Nushell (Rust)](https://github.com/nushell/nushell)
-- [Ammonite (Scala)](https://ammonite.io)
 
 ## License
 
