@@ -58,7 +58,7 @@ Binary releases:
 Requirements: JDK11+
 
 ```
-$ java -jar hosh-0.1.2.jar
+$ java -jar hosh-0.1.3.jar
 hosh> echo "hello world!"
 hello world!
 hosh>
