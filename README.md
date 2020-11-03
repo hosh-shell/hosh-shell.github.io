@@ -7,7 +7,7 @@
 - **portability**¹
     - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
     - works out-of-the-box in Windows, MacOS, Linux
-    - HTTP 1.1/2.0 client and network interface (ifconfig) as built-in commands
+    - HTTP 1.1/2.0 client (`http`) and ifconfig clone (`network`) as built-in commands
 - **usability as first class citizen**²
     - interactive output displayed as table by default
     - sorting with [alphanum](http://davekoelle.com/alphanum.html)
@@ -29,11 +29,18 @@
     - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **robust scripts by default**
     - as if running bash scripts with `set -euo pipefail` ([unofficial-strict-mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/))
+    - strongly typed (but not statically typed)
+       - every value has a type *not everything is a string*
+       - avoiding the need to dump/parse fields
+       - basic types are: `text`, `number`, `path`, `duration` and `instant`
+       - `path` is much more safe than `string` for a lot of uses
+       - `duration` represents amount of time such as `1.5 seconds`
+       - `instant` is a point in time
 - **built with modern tooling and concepts**
     - *Java modules*
     - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
-    - *Actor Model* (a very minimalistic implementation), designed to be compatible with
-      [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
+    - *Commands run in isolated thread and communicate only via records (immutable message)*,
+      designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
@@ -47,7 +54,7 @@ Binary releases:
 
 ## Getting started
 
-Requirements: JDK11
+Requirements: JDK11+
 
 ```
 $ java -jar hosh-0.1.2.jar
