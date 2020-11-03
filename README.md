@@ -25,9 +25,6 @@
        - every value has a type *not everything is a string*
        - avoiding the need to dump/parse fields
        - basic types are: `text`, `number`, `path`, `duration` and `instant`
-       - `path` is much more safe than `string` for a lot of uses
-       - `duration` represents amount of time such as `1.5 seconds`
-       - `instant` is a point in time
 - **pipelines** built around schema-less records:
     - built-in commands produce *records with well-defined keys*
     - use `| schema` to inspect available keys
@@ -147,18 +144,18 @@ key value
 
 ## Inspired by
 
-- [Erlang](https://www.rabbitmq.com/resources/armstrong.pdf)
 - [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline/)
 - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/)
+- [Erlang](https://www.rabbitmq.com/resources/armstrong.pdf)
 - [KScript (Kotlin library)](https://github.com/holgerbrandl/kscript)
 - [Ammonite (Scala)](https://ammonite.io)
 - [Script (Go library)](https://github.com/bitfield/script)
 
 And some nice UI features from:
+- [Nushell (Rust)](https://github.com/nushell/nushell)
 - [Elvish (Go)](https://elv.sh)
 - [Fish (C++)](https://fishshell.com)
-- [Nushell (Rust)](https://github.com/nushell/nushell)
 
 ## License
 
