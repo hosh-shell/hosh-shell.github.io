@@ -19,14 +19,6 @@
        - ignoring duplicated by default (like `HISTCONTROL=ignoredups` in bash)
        - append to history is incremental and shared between all sessions
        - no limits
-- **pipelines** built around schema-less records:
-    - built-in commands produce *records with well-defined keys*
-    - use `| schema` to inspect available keys
-    - interoperability with external commands is achieved by using *single-key record* (with key `text`)
-- **grouping commands**, with before/after behavior
-    - `withTime { lines very-big-file.txt | count }` like `time command` in bash
-    - `withLock file.lock { command }` run `command` as critical section guarded by `file.lock`
-    - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **robust scripts by default**
     - as if running bash scripts with `set -euo pipefail` ([unofficial-strict-mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/))
     - strongly typed (but not statically typed)
@@ -36,6 +28,14 @@
        - `path` is much more safe than `string` for a lot of uses
        - `duration` represents amount of time such as `1.5 seconds`
        - `instant` is a point in time
+- **pipelines** built around schema-less records:
+    - built-in commands produce *records with well-defined keys*
+    - use `| schema` to inspect available keys
+    - interoperability with external commands is achieved by using *single-key record* (with key `text`)
+- **wrapping commands**, with before/after behavior:
+    - `withTime { lines very-big-file.txt | count }` like `time command` in bash
+    - `withLock file.lock { command }` run `command` as critical section guarded by `file.lock`
+    - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **built with modern tooling and concepts**
     - *Java modules*
     - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
