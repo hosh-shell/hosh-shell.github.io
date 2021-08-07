@@ -92,7 +92,7 @@ path size
 
 By sorting the output of `walk` it is trivial to detect the biggest files:
 ```
-hosh> walk . | sort desc size | take 5
+hosh> walk . | sort size desc | take 5
 aaa 2,5MB
 bbb 1MB
 ccc 1MB
