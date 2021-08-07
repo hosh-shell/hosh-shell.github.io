@@ -46,6 +46,7 @@
 ## Downloads
 
 Binary releases:
+ - [v0.1.4 - 2021-08-07](https://github.com/hosh-shell/hosh/releases/download/v0.1.4/hosh-0.1.4.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.4/hosh-0.1.4.jar.asc)\]
  - [v0.1.3 - 2020-11-03](https://github.com/hosh-shell/hosh/releases/download/v0.1.3/hosh-0.1.3.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.3/hosh-0.1.3.jar.asc)\]
  - [v0.1.2 - 2020-07-28](https://github.com/hosh-shell/hosh/releases/download/v0.1.2/hosh-0.1.2.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.2/hosh-0.1.2.jar.asc)\]
  - [v0.1.1 - 2020-06-27](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar) \[[GPG signature](https://github.com/hosh-shell/hosh/releases/download/v0.1.1/hosh-0.1.1.jar.asc)\]
@@ -55,7 +56,7 @@ Binary releases:
 Requirements: JDK11+
 
 ```
-$ java -jar hosh-0.1.3.jar
+$ java -jar hosh-0.1.4.jar
 hosh> echo "hello world!"
 hello world!
 hosh>
