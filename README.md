@@ -7,14 +7,14 @@
 - **portability**¹
     - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
     - works out-of-the-box in Windows, MacOS, Linux
-    - HTTP 1.1/2.0 client (`http`) and ifconfig clone (`network`) as built-in commands
+    - *limited* HTTP 1.1/2.0 client (`http`) and ifconfig clone (`network`) as built-in commands
 - **usability as first class citizen**²
     - interactive output displayed as table by default
-    - sorting with [alphanum](http://davekoelle.com/alphanum.html)
+    - sorting with [natural sort](https://en.wikipedia.org/wiki/Natural_sort_order)
     - ANSI colors by default
     - errors (i.e. stderr) always colored in red
     - file sizes reported by default as KB, MB, GB, ...
-    - [better history by default](https://sanctum.geek.nz/arabesque/better-bash-history/)
+    - better history by default
        - record timestamps for each command (see `history` command)
        - ignoring duplicated by default (like `HISTCONTROL=ignoredups` in bash)
        - append to history is incremental and shared between all sessions
@@ -34,10 +34,10 @@
     - `withLock file.lock { command }` run `command` as critical section guarded by `file.lock`
     - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **built with modern tooling and concepts**
-    - *Java modules*
+    - designed to be compatible with *Java Platform Module System* (i.e. Jigsaw)
+      designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
     - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
     - *Commands run in isolated thread and communicate only via records (immutable message)*,
-      designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
