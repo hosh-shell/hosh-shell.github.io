@@ -35,7 +35,7 @@
     - `benchmark 10 { command }` run `command` 10 times and then report best/worst/average execution time
 - **built with modern tooling and concepts**
     - designed to be compatible with *Java Platform Module System* (i.e. Jigsaw)
-      designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
+    - designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
     - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
     - *Commands run in isolated thread and communicate only via records (immutable message)*,
 
