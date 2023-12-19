@@ -36,8 +36,8 @@
 - **built with modern tooling and concepts**
     - designed to be compatible with *Java Platform Module System* (i.e. Jigsaw)
     - designed to be compatible with [Project Loom](https://wiki.openjdk.java.net/display/loom/Main)
+      as *commands run in isolated thread and communicate only via immutable messages*
     - *Fitness Functions* from *Evolutionary Architecture* ISBN-13: 978-1491986363)
-    - *Commands run in isolated thread and communicate only via records (immutable message)*,
 
 ¹ it is not intended to conform to IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard
 
