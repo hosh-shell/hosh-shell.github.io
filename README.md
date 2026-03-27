@@ -5,7 +5,7 @@
 [Hosh](https://github.com/hosh-shell/hosh) is an experimental shell, featuring:
 
 - **portability**¹
-    - written in Java 11, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
+    - written in Java 25, distributed as [Uber-JAR](https://imagej.net/Uber-JAR)
     - works out-of-the-box in Windows, MacOS, Linux
     - *limited* HTTP 1.1/2.0 client (`http`) and ifconfig clone (`network`) as built-in commands
 - **usability as first class citizen**²
