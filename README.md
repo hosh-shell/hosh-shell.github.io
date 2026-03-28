@@ -50,7 +50,7 @@ Binary releases:
 
 ## Getting started
 
-Requirements: JDK17+
+Requirements: JDK25
 
 ```
 $ java -jar hosh-0.2.0.jar
