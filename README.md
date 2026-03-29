@@ -1,3 +1,4 @@
-# Hosh
+**H**uman **O**riented **SH**ell
 
-https://github.com/hosh-shell/hosh
+[github](https://github.com/hosh-shell/hosh)
+
